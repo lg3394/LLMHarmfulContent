@@ -45,7 +45,7 @@
 <header>
     <h1>How Safe Is AI? When LLMs Generate Harmful Content</h1>
     <h2>Even with advanced safeguards, moderating AI-generated conversations remains a complex challenge-ambiguous risks, overlapping harms, and both user and model behavior make it difficult to reliably detect and prevent unsafe content.</h2>
-    <p class="byline">By Lucia de la Torre </p>
+    <p class="byline">By Lucia de la Torre</p>
 </header>
 
 <section class="container">
@@ -56,7 +56,20 @@
         To answer these questions, I analyzed the <a href="https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0">Aegis AI Content Safety Dataset</a>, a collection of about 11,000 conversations between humans and a large language model, all annotated by experts for a range of safety risks. By merging these annotations with a modern taxonomy of online harms, I set out to visualize and quantify the real risks that arise when people interact with powerful AI.
     </p>
     <p>
-        Frances Haugen, the Facebook whistleblower, told Business Insider in 2022: “Artificial intelligence is nowhere near good enough to address problems facing content moderation on Facebook,” after revealing internal documents showing the limits of automated systems at Meta.
+        As Facebook whistleblower Frances Haugen told Business Insider in 2022, “Artificial intelligence is nowhere near good enough to address problems facing content moderation on Facebook,” after revealing internal documents showing the limits of automated systems at Meta.
+    </p>
+</section>
+
+<section class="container">
+    <h2>Inside the Dataset: How the Data Was Built</h2>
+    <p>
+        The Aegis AI Content Safety Dataset, curated by Nvidia, is one of the most comprehensive resources for studying AI safety in real-world settings. It’s built on top of human preference data from Anthropic’s HH-RLHF dataset, using only the prompts and then generating responses from Mistral-7B. The result: a trove of user prompts, LLM responses, and full dialogues, some benign, some deeply problematic.
+    </p>
+    <p>
+        Annotation was performed by a team of twelve annotators and two data quality leads, all based in the United States and from diverse backgrounds. Each sample was reviewed for a broad taxonomy of risks-hate speech, violence, harassment, privacy violations, criminal planning, sexual content, profanity, and more. Importantly, annotators could also flag content as “Other Risks” for ambiguous or emerging harms not covered by existing categories.
+    </p>
+    <p>
+        Quality assurance was rigorous: multiple annotators reviewed each sample, and leads regularly audited batches for consistency. Annotators were trained to self-correct and participated in regular group training to ensure guidelines were followed and edge cases were discussed. This process is designed to minimize bias and maximize the reliability of the resulting dataset<sup><a href="https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0">[11]</a></sup>.
     </p>
 </section>
 
@@ -132,8 +145,28 @@
     </p>
 </section>
 
+<section class="container">
+    <h2>The Bigger Picture: Why Content Moderation Remains Hard</h2>
+    <p>
+        The findings from this dataset echo what many in the industry have warned: content moderation is not just a technical challenge, but a moving target. As LLMs become more capable, users find new ways to elicit harmful or policy-violating content, and new forms of risk emerge that don’t fit existing categories. Even the best automated systems struggle with ambiguity, context, and cultural nuance. Human reviewers are essential, but the scale and speed of AI-generated content make manual review alone impractical.
+    </p>
+    <p>
+        Merging and maintaining high-quality datasets is itself a challenge. As noted in industry research, combining multiple sources requires careful attention to label consistency, data quality, and the risk of bias or duplication<sup><a href="https://keylabs.ai/blog/merging-multiple-labeled-datasets-ensuring-consistency-and-quality/">[12]</a></sup>. The Aegis dataset’s rigorous annotation and audit process is a model for future work, but it also shows the immense effort required to keep up with evolving harms.
+    </p>
+</section>
+
+<section class="container">
+    <h2>Conclusion: The Path Forward for Safer AI</h2>
+    <p>
+        The Aegis dataset offers a rare, transparent look at the real risks of AI-generated conversations. While most unsafe content falls into a handful of well-known categories, a substantial share remains ambiguous, defying easy classification. Both users and language models contribute to the problem, and overlapping risks make moderation even more complex.
+    </p>
+    <p>
+        As AI continues to shape the digital world, understanding-and visualizing-these risks is a crucial step toward building safer, more trustworthy systems. The challenge now is to ensure our moderation tools, policies, and taxonomies keep pace with the evolving landscape of online harm. Collaboration between researchers, industry, and civil society will be essential to meet this challenge and to ensure that AI serves the public good.
+    </p>
+</section>
+
 <footer>
-    GitHub Repo: <a href="https://github.com/lg3394/trust-safety-ai-analysis">Trust & Safety AI Analysis</a> |
+    <a href="https://github.com/lg3394/trust-safety-ai-analysis">GitHub Repo</a> |
     Published May 5, 2025
 </footer>
 </body>
