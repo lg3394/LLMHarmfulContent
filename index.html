@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hidden Risks in AI Conversations: Content Moderation Challenges</title>
+    <title>How Safe Is AI? When LLMs Generate Harmful Content</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,8 +21,15 @@
         h2 { font-size: 1.4em; margin-top: 2em; }
         .byline { text-align: center; font-style: italic; margin-bottom: 20px; }
         .container { margin-bottom: 40px; }
-        .responsive-chart img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+        .responsive-chart object { max-width: 100%; height: auto; display: block; margin: 0 auto; }
         .chart-caption { text-align: center; font-style: italic; margin-top: 8px; color: #666; }
+        blockquote {
+            border-left: 4px solid #ccc;
+            padding-left: 16px;
+            margin: 24px 0;
+            color: #444;
+            background: #f9f9f9;
+        }
         @media (max-width: 600px) {
             .desktop-version { display: none; }
             .mobile-version { display: block; }
@@ -44,7 +51,7 @@
 
 <header>
     <h1>How Safe Is AI? When LLMs Generate Harmful Content</h1>
-    <h2>Why Both Human and AI Content Moderators Struggle to Prevent Harm in Chatbot Interactions</h2>
+    <h2>Even with advanced safeguards, moderating AI-generated conversations remains a complex challenge-ambiguous risks, overlapping harms, and both user and model behavior make it difficult to reliably detect and prevent unsafe content.</h2>
     <p class="byline">By Lucia de la Torre &mdash; May 5, 2025</p>
 </header>
 
@@ -55,6 +62,10 @@
     <p>
         To answer these questions, I analyzed the <a href="https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0">Aegis AI Content Safety Dataset</a>, a collection of about 11,000 conversations between humans and a large language model, all annotated by experts for a range of safety risks. By merging these annotations with a modern taxonomy of online harms, I set out to visualize and quantify the real risks that arise when people interact with powerful AI.
     </p>
+    <blockquote>
+        “Artificial intelligence is nowhere near good enough to address problems facing content moderation on Facebook,” whistleblower Frances Haugen told Business Insider in 2022, after revealing internal documents showing the limits of automated systems at Meta.<br>
+        <span style="font-size:0.95em;color:#888;">- <a href="https://www.businessinsider.com/meta-facebook-ai-cannot-solve-moderation-frances-haugen-daniel-motaung-2022-6" target="_blank">Business Insider</a></span>
+    </blockquote>
 </section>
 
 <!-- Chart 1: Most Common Content Risks -->
@@ -63,10 +74,10 @@
     <p>Nearly half of flagged content doesn't fit standard risk categories, revealing a significant gap in current content moderation frameworks.</p>
     <div class="responsive-chart">
         <div class="desktop-version">
-            <img src="svg/risk_categories_desktop.svg" alt="Bar chart: Most common content risks in LLM interactions">
+            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/risk_categories_desktop.svg" type="image/svg+xml"></object>
         </div>
         <div class="mobile-version">
-            <img src="svg/risk_categories_mobile.svg" alt="Bar chart: Most common content risks in LLM interactions (mobile)">
+            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/risk_categories_mobile.svg" type="image/svg+xml"></object>
         </div>
         <p class="chart-caption">Nearly half of all flagged conversations were categorized as "Other Risks," highlighting the challenge of classifying harmful content.</p>
     </div>
@@ -81,10 +92,10 @@
     <p>Both users and AI models contribute to unsafe interactions, complicating moderation efforts and highlighting the need for two-way safety systems.</p>
     <div class="responsive-chart">
         <div class="desktop-version">
-            <img src="svg/risk_sources_desktop.svg" alt="Grouped bar chart: Who introduces risk, users or LLM?">
+            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/risk_sources_desktop.svg" type="image/svg+xml"></object>
         </div>
         <div class="mobile-version">
-            <img src="svg/risk_sources_mobile.svg" alt="Grouped bar chart: Who introduces risk, users or LLM? (mobile)">
+            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/risk_sources_mobile.svg" type="image/svg+xml"></object>
         </div>
         <p class="chart-caption">The LLM generates profanity about twice as often as users, likely due to its exposure to profane language during training and its attempts to mimic conversational tone.</p>
     </div>
@@ -99,10 +110,10 @@
     <p>While most unsafe content involves a single risk category, hundreds of conversations contain multiple overlapping risks-creating complex challenges for AI moderation systems.</p>
     <div class="responsive-chart">
         <div class="desktop-version">
-            <img src="svg/multi_risk_desktop.svg" alt="Bar chart showing number of conversations by risk count">
+            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/multi_risk_desktop.svg" type="image/svg+xml"></object>
         </div>
         <div class="mobile-version">
-            <img src="svg/multi_risk_mobile.svg" alt="Bar chart showing number of conversations by risk count">
+            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/multi_risk_mobile.svg" type="image/svg+xml"></object>
         </div>
         <p class="chart-caption">Most flagged conversations involve a single risk, but a significant minority involve two or more, increasing moderation complexity.</p>
     </div>
@@ -113,6 +124,7 @@
 
 <footer>
     GitHub Repo: <a href="https://github.com/lg3394/trust-safety-ai-analysis"></a> |
+    Analysis by Lucia de la Torre |
     Published May 5, 2025
 </footer>
 </body>
