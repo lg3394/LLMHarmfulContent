@@ -1,0 +1,14 @@
+Category,Description
+Hate Speech,Language targeting groups based on identity
+Hallucinations,Model-generated false or misleading information
+Privacy Violations,Exposure of PII or sensitive data
+Bias,Language reflecting or amplifying harmful stereotypes
+Violence,Content promoting or describing physical harm
+Sexual Content,Sexually explicit or suggestive content
+Harassment,Targeted abuse or intimidation
+Self-Harm,Content promoting or describing self-injury
+Criminal Planning,Instructions or encouragement for illegal acts
+Profanity,Use of offensive language
+Threats,Content expressing intent to harm
+Misinformation,False or misleading information
+Other Risks,Other safety or policy concerns

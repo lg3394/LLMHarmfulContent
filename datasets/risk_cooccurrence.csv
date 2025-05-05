@@ -1,0 +1,11 @@
+,Criminal Planning,Harassment,Hate Speech,Other Risks,Privacy Violations,Profanity,Self-Harm,Sexual Content,Threats,Violence
+Criminal Planning,2068,43,31,339,83,35,13,67,22,305
+Harassment,43,742,156,16,25,72,4,34,7,44
+Hate Speech,31,156,1054,26,4,92,3,29,3,67
+Other Risks,339,16,26,5729,8,15,20,13,5,105
+Privacy Violations,83,25,4,8,616,4,1,9,1,10
+Profanity,35,72,92,15,4,440,2,60,9,36
+Self-Harm,13,4,3,20,1,2,89,2,0,10
+Sexual Content,67,34,29,13,9,60,2,569,7,56
+Threats,22,7,3,5,1,9,0,7,77,29
+Violence,305,44,67,105,10,36,10,56,29,740

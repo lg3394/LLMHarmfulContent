@@ -1,0 +1,11 @@
+taxonomy_categories,combined,llm_response,multi_turn,user_message
+Criminal Planning,604,547,430,547
+Harassment,200,214,151,189
+Hate Speech,293,319,203,263
+Other Risks,1766,1787,509,1837
+Privacy Violations,193,156,137,152
+Profanity,128,150,94,78
+Self-Harm,36,30,13,11
+Sexual Content,155,174,99,153
+Threats,26,21,10,20
+Violence,250,210,152,146
