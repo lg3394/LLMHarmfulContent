@@ -23,13 +23,6 @@
         .container { margin-bottom: 40px; }
         .responsive-chart object { max-width: 100%; height: auto; display: block; margin: 0 auto; }
         .chart-caption { text-align: center; font-style: italic; margin-top: 8px; color: #666; }
-        blockquote {
-            border-left: 4px solid #ccc;
-            padding-left: 16px;
-            margin: 24px 0;
-            color: #444;
-            background: #f9f9f9;
-        }
         @media (max-width: 600px) {
             .desktop-version { display: none; }
             .mobile-version { display: block; }
@@ -52,7 +45,7 @@
 <header>
     <h1>How Safe Is AI? When LLMs Generate Harmful Content</h1>
     <h2>Even with advanced safeguards, moderating AI-generated conversations remains a complex challenge-ambiguous risks, overlapping harms, and both user and model behavior make it difficult to reliably detect and prevent unsafe content.</h2>
-    <p class="byline">By Lucia de la Torre &mdash; May 5, 2025</p>
+    <p class="byline">By Lucia de la Torre </p>
 </header>
 
 <section class="container">
@@ -62,10 +55,9 @@
     <p>
         To answer these questions, I analyzed the <a href="https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0">Aegis AI Content Safety Dataset</a>, a collection of about 11,000 conversations between humans and a large language model, all annotated by experts for a range of safety risks. By merging these annotations with a modern taxonomy of online harms, I set out to visualize and quantify the real risks that arise when people interact with powerful AI.
     </p>
-    <blockquote>
-        “Artificial intelligence is nowhere near good enough to address problems facing content moderation on Facebook,” whistleblower Frances Haugen told Business Insider in 2022, after revealing internal documents showing the limits of automated systems at Meta.<br>
-        <span style="font-size:0.95em;color:#888;">- <a href="https://www.businessinsider.com/meta-facebook-ai-cannot-solve-moderation-frances-haugen-daniel-motaung-2022-6" target="_blank" rel="noopener">Business Insider</a></span>
-    </blockquote>
+    <p>
+        Frances Haugen, the Facebook whistleblower, told Business Insider in 2022: “Artificial intelligence is nowhere near good enough to address problems facing content moderation on Facebook,” after revealing internal documents showing the limits of automated systems at Meta.
+    </p>
 </section>
 
 <!-- Chart 1: Most Common Content Risks -->
@@ -122,9 +114,26 @@
     </p>
 </section>
 
+<!-- Chart 4: Ambiguous Risks Pie Chart -->
+<section class="container">
+    <h2>Ambiguous Risks Pose a Challenge</h2>
+    <p>Nearly half of all flagged content in LLM conversations is too ambiguous to fit a set category, complicating efforts to detect and moderate harmful material.</p>
+    <div class="responsive-chart">
+        <div class="desktop-version">
+            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/ambiguous_content_landscape.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="mobile-version">
+            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/ambiguous_content_portrait.svg" type="image/svg+xml"></object>
+        </div>
+        <p class="chart-caption">Ambiguous risks make up a large share of flagged content, highlighting the limits of current moderation taxonomies.</p>
+    </div>
+    <p>
+        When a large share of unsafe content is ambiguous, it exposes the limits of automated moderation and the ongoing need for human oversight, clearer guidelines, and adaptive systems.
+    </p>
+</section>
+
 <footer>
-    GitHub Repo: <a href="https://github.com/lg3394/trust-safety-ai-analysis"></a> |
-    Analysis by Lucia de la Torre |
+    GitHub Repo: <a href="https://github.com/lg3394/trust-safety-ai-analysis">Trust & Safety AI Analysis</a> |
     Published May 5, 2025
 </footer>
 </body>
