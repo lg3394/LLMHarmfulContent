@@ -61,7 +61,7 @@
 
 <header>
     <h1>How Safe Is AI? When LLMs Generate Harmful Content</h1>
-    <h2>Even with advanced safeguards, moderating AI-generated conversations remains a complex challenge-ambiguous risks, overlapping harms, and both user and model behavior make it difficult to reliably detect and prevent unsafe content.</h2>
+    <h2>Even with advanced safeguards, moderating AI-generated conversations remains a complex challenge – ambiguous risks, overlapping harms, and both user and model behavior make it difficult to reliably detect and prevent unsafe content.</h2>
     <p class="byline">By Lucia de la Torre</p>
 </header>
 
@@ -83,7 +83,7 @@
         The Aegis AI Content Safety Dataset, curated by Nvidia, is one of the most comprehensive resources for studying AI safety in real-world settings. It's built on top of human preference data from Anthropic's HH-RLHF dataset, using only the prompts and then generating responses from Mistral-7B. The result: a trove of user prompts, LLM responses, and full dialogues, some benign, some deeply problematic.
     </p>
     <p>
-        Annotation was performed by a team of twelve annotators and two data quality leads, all based in the United States and from diverse backgrounds. Each sample was reviewed for a broad taxonomy of risks-hate speech, violence, harassment, privacy violations, criminal planning, sexual content, profanity, and more. Importantly, annotators could also flag content as "Other Risks" for ambiguous or emerging harms not covered by existing categories.
+        Annotation was performed by a team of twelve annotators and two data quality leads, all based in the United States and from diverse backgrounds. Each sample was reviewed for a broad taxonomy of risks: hate speech, violence, harassment, privacy violations, criminal planning, sexual content, profanity, and more. Importantly, annotators could also flag content as "Other Risks" for ambiguous or emerging harms not covered by existing categories.
     </p>
     <p>
         Quality assurance was rigorous: multiple annotators reviewed each sample, and leads regularly audited batches for consistency. Annotators were trained to self-correct and participated in regular group training to ensure guidelines were followed and edge cases were discussed. This process is designed to minimize bias and maximize the reliability of the resulting dataset<sup><a href="https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0">[11]</a></sup>.
@@ -101,7 +101,7 @@
         <div class="mobile-version">
             <object data="https://raw.githubusercontent.com/lg3394/LLMHarmfulContent/main/svg/most-common-harmful-content-portrait.svg" type="image/svg+xml"></object>
         </div>
-        <p class="chart-caption">Nearly half of all flagged conversations were categorized as "Other Risks," highlighting the challenge of classifying harmful content.</p>
+        <p class="chart-caption">In fact, nearly half of all flagged conversations were categorized as "Other Risks," highlighting the challenge of classifying harmful content.</p>
     </div>
     <p>
         The most striking finding: nearly half of all flagged conversations fell into the ambiguous "Other Risks" category-content that annotators found unsafe, but that didn't fit neatly into any predefined box. This ambiguity poses a major challenge for both AI and human moderators, as it's much harder to train algorithms to detect risks that defy clear definition.
@@ -119,7 +119,7 @@
         <div class="mobile-version">
             <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/who-introduces-risk-portrait.svg" type="image/svg+xml"></object>
         </div>
-        <p class="chart-caption">The LLM generates profanity about twice as often as users, likely due to its exposure to profane language during training and its attempts to mimic conversational tone.</p>
+        <p class="chart-caption">The LLM generated profanity about twice as often as users, likely due to its exposure to profane language during training and its attempts to mimic conversational tone. These findings show that harm is introduced not just by user prompts but also by LLM responses, underscoring a need for safety strategies targeting both sides of the conversation.</p>
     </div>
     <p>
         Policy-violating content in LLM conversations originates from both users and the AI, with some risks introduced directly by the model itself. For example, "Other Risks" was almost evenly split between user prompts and LLM responses. In categories like profanity, the LLM was flagged for introducing offensive language nearly twice as often as users.
@@ -129,7 +129,7 @@
 <!-- Chart 3: Multi-Risk Bar Chart -->
 <section class="container">
     <h2>Complex Moderation: Multiple Risks in a Single Conversation</h2>
-    <p>While most unsafe content involves a single risk category, hundreds of conversations contain multiple overlapping risks-creating complex challenges for AI moderation systems.</p>
+    <p>Most unsafe content involves a single risk, but hundreds of conversations contain overlapping risks—posing unique challenges for moderation systems.</p>
     <div class="responsive-chart">
         <div class="desktop-version">
             <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/single_risk_landscape.svg" type="image/svg+xml"></object>
@@ -155,7 +155,7 @@
         <div class="mobile-version">
             <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/ambiguous_content_portrait.svg" type="image/svg+xml"></object>
         </div>
-        <p class="chart-caption">Ambiguous risks make up a large share of flagged content, highlighting the limits of current moderation taxonomies.</p>
+        <p class="chart-caption">Ambiguous risks make up a substantial share of flagged content, highlighting the limits of current moderation taxonomies.</p>
     </div>
     <p>
         When a large share of unsafe content is ambiguous, it exposes the limits of automated moderation and the ongoing need for human oversight, clearer guidelines, and adaptive systems.
@@ -202,7 +202,7 @@
         
         <li><strong>Ambiguity Quantification:</strong> I isolated and analyzed the "Other Risks" category that didn't fit standard taxonomies, revealing that 46% of all flagged content falls outside established classification systems. This highlighted a significant gap in current content moderation frameworks.</li>
         
-        <li><strong>Data Transformation:</strong> I processed and restructured the datasets to enable effective visualization, creating derived datasets for each chart that highlighted different aspects of the content moderation challenge.</li>
+        <li><strong>Data Transformation:</strong> I processed and restructured the datasets to enable effective visualization, creating derived datasets for each chart that highlight different aspects of the content moderation challenge.</li>
     </ol>
     
     <p>
