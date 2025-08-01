@@ -21,7 +21,7 @@
         h2 { font-size: 1.4em; margin-top: 2em; }
         .byline { text-align: center; font-style: italic; margin-bottom: 20px; }
         .container { margin-bottom: 40px; }
-        .responsive-chart object { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+        .responsive-chart img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
         .chart-caption { text-align: center; font-style: italic; margin-top: 8px; color: #666; }
         @media (max-width: 600px) {
             .desktop-version { display: none; }
@@ -96,10 +96,12 @@
     <p>Nearly half of flagged content doesn't fit standard risk categories, revealing a significant gap in current content moderation frameworks.</p>
     <div class="responsive-chart">
         <div class="desktop-version">
-            <object data="https://raw.githubusercontent.com/lg3394/LLMHarmfulContent/main/svg/most-common-harmful-content-landscape.svg" type="image/svg+xml"></object>
+            <img src="https://lg3394.github.io/LLMHarmfulContent/svg/most-common-harmful-content-landscape.svg"
+                 alt="Most common harmful content (landscape)">
         </div>
         <div class="mobile-version">
-            <object data="https://raw.githubusercontent.com/lg3394/LLMHarmfulContent/main/svg/most-common-harmful-content-portrait.svg" type="image/svg+xml"></object>
+            <img src="https://lg3394.github.io/LLMHarmfulContent/svg/most-common-harmful-content-portrait.svg"
+                 alt="Most common harmful content (portrait)">
         </div>
         <p class="chart-caption">In fact, nearly half of all flagged conversations were categorized as "Other Risks," highlighting the challenge of classifying harmful content.</p>
     </div>
@@ -114,10 +116,12 @@
     <p>Both users and AI models contribute to unsafe interactions, complicating moderation efforts and highlighting the need for two-way safety systems.</p>
     <div class="responsive-chart">
         <div class="desktop-version">
-            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/who-introduces-risk-landscape.svg" type="image/svg+xml"></object>
+            <img src="https://lg3394.github.io/LLMHarmfulContent/svg/who-introduces-risk-landscape.svg"
+                 alt="Who introduces harmful content (landscape)">
         </div>
         <div class="mobile-version">
-            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/who-introduces-risk-portrait.svg" type="image/svg+xml"></object>
+            <img src="https://lg3394.github.io/LLMHarmfulContent/svg/who-introduces-risk-portrait.svg"
+                 alt="Who introduces harmful content (portrait)">
         </div>
         <p class="chart-caption">The LLM generated profanity about twice as often as users, likely due to its exposure to profane language during training and its attempts to mimic conversational tone. These findings show that harm is introduced not just by user prompts but also by LLM responses, underscoring a need for safety strategies targeting both sides of the conversation.</p>
     </div>
@@ -132,10 +136,12 @@
     <p>Most unsafe content involves a single risk, but hundreds of conversations contain overlapping risks—posing unique challenges for moderation systems.</p>
     <div class="responsive-chart">
         <div class="desktop-version">
-            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/single_risk_landscape.svg" type="image/svg+xml"></object>
+            <img src="https://lg3394.github.io/LLMHarmfulContent/svg/single_risk_landscape.svg"
+                 alt="Single vs Multiple risks (landscape)">
         </div>
         <div class="mobile-version">
-            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/single_risk_portrait.svg" type="image/svg+xml"></object>
+            <img src="https://lg3394.github.io/LLMHarmfulContent/svg/single_risk_portrait.svg"
+                 alt="Single vs Multiple risks (portrait)">
         </div>
         <p class="chart-caption">Most flagged conversations involve a single risk, but a significant minority involve two or more, increasing moderation complexity.</p>
     </div>
@@ -150,10 +156,12 @@
     <p>Nearly half of all flagged content in LLM conversations is too ambiguous to fit a set category, complicating efforts to detect and moderate harmful material.</p>
     <div class="responsive-chart">
         <div class="desktop-version">
-            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/ambiguous_content_landscape.svg" type="image/svg+xml"></object>
+            <img src="https://lg3394.github.io/LLMHarmfulContent/svg/ambiguous_content_landscape.svg"
+                 alt="Ambiguous risks (landscape)">
         </div>
         <div class="mobile-version">
-            <object data="https://lg3394.github.io/trust-safety-ai-analysis/svg/ambiguous_content_portrait.svg" type="image/svg+xml"></object>
+            <img src="https://lg3394.github.io/LLMHarmfulContent/svg/ambiguous_content_portrait.svg"
+                 alt="Ambiguous risks (portrait)">
         </div>
         <p class="chart-caption">Ambiguous risks make up a substantial share of flagged content, highlighting the limits of current moderation taxonomies.</p>
     </div>
@@ -178,7 +186,7 @@
         The Aegis dataset offers a rare, transparent look at the real risks of AI-generated conversations. While most unsafe content falls into a handful of well-known categories, a substantial share remains ambiguous, defying easy classification. Both users and language models contribute to the problem, and overlapping risks make moderation even more complex.
     </p>
     <p>
-        As AI continues to shape the digital world, understanding-and visualizing-these risks is a crucial step toward building safer, more trustworthy systems. The challenge now is to ensure our moderation tools, policies, and taxonomies keep pace with the evolving landscape of online harm. Collaboration between researchers, industry, and civil society will be essential to meet this challenge and to ensure that AI serves the public good.
+        As AI continues to shape the digital world, understanding–and visualizing–these risks is a crucial step toward building safer, more trustworthy systems. The challenge now is to ensure our moderation tools, policies, and taxonomies keep pace with the evolving landscape of online harm. Collaboration between researchers, industry, and civil society will be essential to meet this challenge and to ensure that AI serves the public good.
     </p>
 </section>
 
@@ -221,3 +229,4 @@
 </footer>
 </body>
 </html>
+
